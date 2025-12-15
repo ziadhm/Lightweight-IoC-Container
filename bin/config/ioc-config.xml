@@ -1,0 +1,13 @@
+<components>
+    <!-- MovieFinder Components -->
+    <component interface="app.MovieFinder" implementation="app.DatabaseMovieFinder" priority="1" />
+    <component interface="app.MovieFinder" implementation="app.FileMovieFinder" priority="2" />
+    <component interface="app.DatabaseAccess" implementation="app.DatabaseAccess" priority="1" />
+    <component interface="app.NetworkCommunicator" implementation="app.NetworkCommunicator" priority="1" />
+
+    <!-- SpellChecker Components -->
+    <component interface="app.TextEditor" implementation="app.TextEditor" priority="1" />
+    <component interface="app.SpellChecker" implementation="app.EnglishSpellChecker" priority="1" />
+    <component interface="app.Dictionary" implementation="app.SimpleDictionary" priority="1" />
+    <component interface="app.FileLoader" implementation="app.FileBasedLoader" priority="1" />
+</components>
